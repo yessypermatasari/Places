@@ -10,12 +10,13 @@
  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  See the License for the specific language governing permissions and
  limitations under the License.-->
+
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <LinearLayout
-    android:layout_width="match_parent"
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginBottom="24dp"
         android:layout_marginLeft="16dp"
@@ -37,13 +38,13 @@
             android:background="@color/colorPrimary" />
 
         <LinearLayout
-        android:layout_width="match_parent"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
             <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:paddingBottom="4dp"
                 android:paddingRight="8dp"
                 android:paddingTop="4dp"
@@ -51,7 +52,7 @@
 
             <Switch
                 android:id="@+id/enable_switch"
-            android:layout_width="match_parent"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
                 android:text="@string/enable_geofences"
@@ -65,22 +66,22 @@
 
             <ImageView
                 android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+                android:layout_height="wrap_content"
                 android:paddingBottom="4dp"
                 android:paddingRight="8dp"
                 android:paddingTop="4dp"
                 android:src="@drawable/ic_my_location_primary_24dp" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="@string/location_permissions"
-            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-            android:textColor="@android:color/black" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/location_permissions"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@android:color/black" />
 
             <RelativeLayout
-            android:layout_width="match_parent"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
                 <CheckBox
@@ -92,7 +93,7 @@
                     android:onClick="onLocationPermissionClicked" />
 
             </RelativeLayout>
-    </LinearLayout>
+        </LinearLayout>
 
 
         <Button
@@ -125,5 +126,29 @@
             android:layout_height="wrap_content" />
 
     </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="4dp"
+            android:src="@drawable/powered_by_google_light" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autoLink="web"
+            android:paddingBottom="4dp"
+            android:text="@string/privacy"
+            android:textAlignment="center" />
+    </LinearLayout>
+
 
 </RelativeLayout>
